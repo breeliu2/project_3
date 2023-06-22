@@ -5,7 +5,7 @@ This project aims to create a webpage called Dr. AI that displays a list of comm
 
 ## Group Members
 - Sujatha
-- Briana Lui
+- Briana Liu
 - Andy Metz
 - Anitha Pandian
 - Younes Smyej
