@@ -2,93 +2,7 @@
 <html>
 <head>
   <title>Dr. AI</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-image: url('images/image2.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .header {
-      text-align: center;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.9);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-      margin-bottom: 20px;
-    }
-
-    .header h1 {
-      font-size: 36px;
-      margin: 0;
-    }
-
-    .tabs {
-      display: flex;
-      justify-content: center;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 20px;
-      border-radius: 5px;
-    }
-
-    .tabs button {
-      background-color: transparent;
-      border: none;
-      color: #fff;
-      padding: 10px 20px;
-      font-size: 18px;
-      cursor: pointer;
-    }
-
-    .tabs button:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-    }
-
-    .tab-content {
-      display: none;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 5px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .tab-content.active {
-      display: block;
-    }
-
-    h1 {
-      font-size: 24px;
-      margin-top: 0;
-      margin-bottom: 20px;
-    }
-
-    .image-container {
-      text-align: center;
-    }
-
-    .image-container img {
-      max-width: 400px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    }
-
-    .disease-input {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .disease-input input {
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      width: 300px;
-      box-sizing: border-box;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div class="header">
@@ -98,6 +12,7 @@
   <div class="tabs">
     <button class="tab-link" onclick="openTab(event, 'over-the-counter-medication')">Over the Counter Medication</button>
     <button class="tab-link" onclick="openTab(event, 'common-symptoms')">Common Symptoms</button>
+    <button onclick="executeMongoDBScript()">Insert Data to MongoDB</button>
   </div>
 
   <div id="over-the-counter-medication" class="tab-content active">
@@ -107,13 +22,11 @@
       <button onclick="getRemedies()">Get Remedies</button>
     </div>
     <div class="image-container">
-      <img src="images/image1.jpg" alt="Image1">
+      <img src="images/image1.jpg" alt="Image 1">
     </div>
-    <!-- Content for the Over the Counter Medication tab -->
-
-    <!-- Content for the Common Symptoms tab -->
   </div>
 
   <script src="logic.js"></script>
+  <script src="mongodb_dataload.js"></script>
 </body>
 </html>
