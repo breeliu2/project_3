@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dr. AI</title>
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Dr. AI</h1>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-link" onclick="openTab(event, 'over-the-counter-medication')">Over the Counter Medication</button>
+    <button class="tab-link" onclick="openTab(event, 'common-symptoms')">Common Symptoms</button>
+    <button onclick="executeMongoDBScript()">Insert Data to MongoDB</button>
+  </div>
+
+  <div id="over-the-counter-medication" class="tab-content active">
+    <h1>Over the Counter Medication</h1>
+    <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+    <div class="image-container">
+      <img src="static/Images/image1.jpg" alt="Image 1">
+    </div>
+  </div>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/subcountslogic.js"></script>
+  <!-- <script type="text/javascript" src="static/js/mongodb_dataload.js"></script> -->
+
+</body>
+</html>
