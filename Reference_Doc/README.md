@@ -25,6 +25,7 @@ Run the below commands in the visual studio terminal window - only for the first
 **----- To Execute ---**
 Open server side app.py in visual studio code and ensure terminal window is naviagate server folder and un the below command<br>
 * $ source env/bin/activate<br>
+* $ flask run --port=5001 --debugger <br>
     Navigate to webbrowser use the below api calls and check you get back response using API calls <br>
     * http://localhost:5001/refresh_data
     * http://localhost:5001/getMedicationByType/Over-the-counter

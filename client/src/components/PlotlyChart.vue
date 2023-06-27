@@ -1,7 +1,7 @@
 <template>
     <div :ref="chart.uuid"></div>
 </template>
-  
+  <!-- chart display script -->
   <script>
   export default {
     props: ['chart'],
