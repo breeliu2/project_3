@@ -1,11 +1,10 @@
-import uuid, requests
+import requests
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify
 from flask_cors import CORS
 
 # from pymongo import MongoClient
 from flask_pymongo import PyMongo
-import json
 
 # define query parameters to get data from FDA source data site
 # number of records to pull from source
@@ -81,8 +80,6 @@ def getCountByCategory(medication_type,category_type):
 def refresh_data():
     res_count = 0
     for each_col in fda_get_col:
-        print (each_col["marketing_status"])
-        print (each_col["col_name"])
         response = requests.get(f'https://api.fda.gov/drug/drugsfda.json?search=products.marketing_status:%22{each_col["marketing_status"]}%22&limit={limit_value}')
         data = response.json()
         filtered_data = filter_records(data)    
