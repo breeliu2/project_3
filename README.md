@@ -20,7 +20,7 @@ To build the Dr. AI webpage, we will be using the following data source:
 ## Technical Implementation
 * Mongo DB
 * Python Flask API
-* Vue.js
+* Vue.js, Plotly.js
 * BootsrapVue
 * HTML
 
