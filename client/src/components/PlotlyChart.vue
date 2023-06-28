@@ -22,6 +22,7 @@
     }   
   };
   </script>
+  <!-- chart container style -->
   <style>
   .chart-container {
     display: flex;

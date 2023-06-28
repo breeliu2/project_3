@@ -1,29 +1,15 @@
-import requests
+# Import the dependencies
+import requests, db_config
 
 from flask import Flask, jsonify
 from flask_cors import CORS
-
-# from pymongo import MongoClient
 from flask_pymongo import PyMongo
 
 # define query parameters to get data from FDA source data site
 # number of records to pull from source
-limit_value = 100
+limit_value = db_config.query_limit
 # list of types and collection in which the records to be stored
-fda_get_col = [
-    {
-    "marketing_status"   : "Over-the-counter",
-    "col_name"           : "fda_otc_drugs"
-    },
-    {
-    "marketing_status"   : "Prescription",
-    "col_name"           : "fda_rx_drugs"
-    },
-    {
-    "marketing_status"   : "Discontinued",
-    "col_name"           : "fda_dis_drugs"
-    }          
-]
+fda_get_col = db_config.db_collections
 
 # instantiate the app
 app = Flask(__name__)
@@ -33,7 +19,7 @@ app.config.from_object(__name__)
 CORS(app, resources={r'/*': {'origins': '*'}})
 
 # MongoDB Connection
-app.config["MONGO_URI"] = "mongodb://127.0.0.1:27017/DrugsDatabase"
+app.config[db_config.mongoURI] = db_config.mongodb_path
 mongo = PyMongo(app)
 
 # Flask route to get all Medication's 
