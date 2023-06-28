@@ -1,6 +1,7 @@
 # Dr. AI -
 ![Image Description](Img_3.png)
-## Project Overview
+#### Reference_Doc folder contains screenshots of this Doctor.AI webpage and READMEfile on how to set up and run this project  
+##Project Overview
 This project aims to create a webpage called Doctor.AI(in short Dr.AI) that displays a list of medication. Dr.AI provides a user-friendly webpage with options to choose between Over the counter or Prescription or Discontinued medication type and view results with seamless experience for users.
 
 ## Group Members
@@ -35,11 +36,10 @@ To build the Dr. AI webpage, we will be using the following data source:
 * Dashboard will display with more detailed infomration directly from FDA website using Drug Labeling API call using Medication brand name when the user clicks on specifc medications "More Details" button.
 
 **-- Content in Main Branch: --**
-1. Reference_Doc folder contains details on how to execute this project
+1. Reference_Doc folder contains details on how to execute this project and screenshots
 2. server folder contains app.py(FLASK API call code) and requirement.txt contains all libraries required for this project
 3. client folder contains vue, js and HTML files which will be used on clinet(user) end along with package.json files that contains all required installables needed on clinet side
-4. DR. AI_Slide_deck - contains
-5. 
+4. DR. AI_Slide_deck - contains5. 
 
 
 
