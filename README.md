@@ -1,5 +1,5 @@
 # Dr. AI -
-![Image Description](image3.png)
+![Image Description](Img3.png)
 ## Project Overview
 This project aims to create a webpage called Dr. AI that displays a list of common symptoms. Users can select their symptoms, and they will be shown a list of remedies, including over-the-counter drugs and other relevant solutions. The webpage will consist of three tabs: Symptom to Disease, Common Symptoms, and Remedies. Users can navigate between these tabs to find information related to their symptoms and potential remedies.
 
