@@ -4,7 +4,6 @@
     <!-- Creates a overlay to show the user that a backend process is running -->
     <b-overlay :show="showProcess" rounded="sm">  
         <!-- Container to hold all UI display elements -->
-        <!-- <b-container class="bv-example-row"> -->
             <b-container class="dr-ai-ui">
             <b-row>
                 <b-col>
