@@ -25,7 +25,6 @@ mongo = PyMongo(app)
 # Flask route to get all Medication's 
 @app.route('/getMedicationByType/<medication_type>', methods=['GET'])
 def getMedicationByType(medication_type):
-    print(medication_type)
     for each_col in fda_get_col:
         if each_col["marketing_status"] == medication_type:
             col = mongo.db.get_collection(each_col['col_name'])
@@ -61,7 +60,7 @@ def getCountByCategory(medication_type,category_type):
             return (jsonify(res))
 
 
-# Flask route to refresh data from data source if requested by the user
+# Flask route to refresh data from data source(FDA Website Drugs@FDA API call using marketing status) if requested by the user or on page load
 @app.route('/refresh_data', methods=['POST'])
 def refresh_data():
     res_count = 0
@@ -75,7 +74,7 @@ def refresh_data():
         res_count += len(res.inserted_ids)    
     return jsonify(f"Total records refreshed from source:{res_count}")
 
-# Flask route to refresh data from data source if requested by the user
+# Flask route to get additional details from FDA Website using lables FDA API call
 @app.route('/getMoreDetailsFromFDA/<brand_name>', methods=['GET'])
 def getMoreDetailsFromFDA(brand_name):
     response = requests.get(f'https://api.fda.gov/drug/label.json?search=openfda.brand_name:"{brand_name}"&limit=1')
