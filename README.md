@@ -1,7 +1,8 @@
 # Dr. AI -
 ![Image Description](Img_3.png)
-#### Reference_Doc folder contains screenshots of this Doctor.AI webpage and READMEfile on how to set up and run this project  
-##Project Overview
+#### Reference_Doc folder contains screenshots of this Doctor.AI webpage and READMEfile on how to set up and run this project
+--
+## Project Overview
 This project aims to create a webpage called Doctor.AI(in short Dr.AI) that displays a list of medication. Dr.AI provides a user-friendly webpage with options to choose between Over the counter or Prescription or Discontinued medication type and view results with seamless experience for users.
 
 ## Group Members
