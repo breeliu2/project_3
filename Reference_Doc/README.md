@@ -1,4 +1,3 @@
-
 ## Dr. AI - How to setup and run this project?
 
 ## **----- To setup ---**
@@ -29,7 +28,7 @@ If any issues please run the below install seperately. Not needed if above works
 1. run mongod in your local machine - API calls needs mongodb connection and this step is essential for API calls to work 
 2. Open server side app.py in visual studio code and ensure terminal window is naviagate server folder and run the below command<br>
     * $ source env/bin/activate<br>
-    * $ flask run --port=5001 --debugger <br> <br>
+    * $ flask run --port=5001 <br> <br>
         Navigate to webbrowser use the below api calls and check you get back response using API calls <br>
         * http://localhost:5001/refresh_data
         * http://localhost:5001/getMedicationByType/Over-the-counter
