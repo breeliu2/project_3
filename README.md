@@ -33,14 +33,14 @@ To build the Dr. AI webpage, we will be using the following data source:
 
 ## Additional UI Features
 * Data from source (FDA site) will be refreshed at page load(Drugs@FDA API call using Marketing staus).
-* Optionally, a button "Refresh data again? Click Me" is is also provedd to refresh data from source(Drugs@FDA API call using Marketing staus).
+* Optionally, a button "Refresh data again? Click Me" is also provided to refresh data from source(Drugs@FDA API call using Marketing staus).
 * Dashboard will display with more detailed infomration directly from FDA website using Drug Labeling API call using Medication brand name when the user clicks on specifc medications "More Details" button.
 
 **-- Content in Main Branch: --**
 1. Reference_Doc folder contains details on how to execute this project and screenshots
 2. server folder contains app.py(FLASK API call code) and requirement.txt contains all libraries required for this project
 3. client folder contains vue, js and HTML files which will be used on clinet(user) end along with package.json files that contains all required installables needed on clinet side
-4. DR. AI_Slide_deck - contains5. 
+4. DR. AI_Slide_deck - detailed presentation of this project. 
 
 
 
